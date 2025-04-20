@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AUTOMAX Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <h1>AUTOMAX WORKSHOP</h1>
+        <p>Robotics Club MANIT</p>
+    </div>
+
+    <div class="menu-container">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="menu" id="mainMenu">
+            <a href="#about">About</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div id="about" class="section">
+            <h2>About Workshop</h2>
+            <p>Join our 2-day hands-on robotics workshop at MANIT Bhopal</p>
+            <p><strong>Date:</strong> November 15-16, 2023</p>
+            <p><strong>Time:</strong> 9:00 AM to 5:00 PM</p>
+            <p><strong>What you'll learn:</strong> Arduino programming, sensor interfacing, and basic robotics</p>
+        </div>
+
+        <div id="register" class="section">
+            <h2>Registration Form</h2>
+            <form id="regForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name*</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input type="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number*</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>College*</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Branch*</label>
+                        <select required>
+                            <option value="">Select Branch</option>
+                            <option>CSE</option>
+                            <option>ECE</option>
+                            <option>ME</option>
+                            <option>EE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Year*</label>
+                        <select required>
+                            <option value="">Select Year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Register Now</button>
+                <p id="successMsg"></p>
+            </form>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@roboticsclubmanit.com</p>
+            <p><strong>Mohd Massir:</strong> 6268987973</p>
+            <p><strong>Srijan Pandey:</strong> 8770127958</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2023 Robotics Club MANIT | AUTOMAX Workshop
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
